@@ -1,7 +1,8 @@
 import { errorHandler, jwtMiddleware } from 'helpers/api';
 
 
-function apiHandler(handler) {
+export function apiHandler(handler) {
+    console.log("sss");
     return async (req, res) => {
         const method = req.method.toLowerCase();
         // check handler supports HTTP method
@@ -20,4 +21,4 @@ function apiHandler(handler) {
     }
 }
 
-export { apiHandler };
+

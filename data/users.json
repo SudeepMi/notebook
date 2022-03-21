@@ -16,5 +16,14 @@
         "id": 2,
         "dateCreated": "2022-03-21T04:19:51.568Z",
         "dateUpdated": "2022-03-21T04:19:51.568Z"
+    },
+    {
+        "firstName": "Knox",
+        "lastName": "Chan",
+        "username": "vahasyxa",
+        "hash": "$2a$10$OkHFnOShN6RwLi3GtzfPruXjD.S2MPm3knzjG47CUk6xDyHRhIBQu",
+        "id": 3,
+        "dateCreated": "2022-03-21T12:43:29.873Z",
+        "dateUpdated": "2022-03-21T12:43:29.874Z"
     }
 ]
