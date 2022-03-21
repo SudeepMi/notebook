@@ -1,0 +1,20 @@
+[
+    {
+        "firstName": "Warren",
+        "lastName": "Joyce",
+        "username": "pogojyj",
+        "hash": "$2a$10$T36ph.I6LiOxaDjIBq1LFetKahfEUw8a4VYA.WC1L6Aoa81nteSBC",
+        "id": 1,
+        "dateCreated": "2022-03-21T04:19:37.255Z",
+        "dateUpdated": "2022-03-21T04:19:37.255Z"
+    },
+    {
+        "firstName": "Alexandra",
+        "lastName": "Rollins",
+        "username": "refisekeqi",
+        "hash": "$2a$10$JmnKe1SdbIwBfVa.t75mE.j1RLQQPltMN/iTbD1.gERos4BBv.ms.",
+        "id": 2,
+        "dateCreated": "2022-03-21T04:19:51.568Z",
+        "dateUpdated": "2022-03-21T04:19:51.568Z"
+    }
+]
