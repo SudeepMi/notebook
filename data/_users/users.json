@@ -1,7 +1,7 @@
 [
     {
-        "firstName": "Warren",
-        "lastName": "Joyce",
+        "firstName": "Adrian",
+        "lastName": "Webber",
         "username": "pogojyj",
         "hash": "$2a$10$T36ph.I6LiOxaDjIBq1LFetKahfEUw8a4VYA.WC1L6Aoa81nteSBC",
         "id": 1,
@@ -61,5 +61,14 @@
         "id": 7,
         "dateCreated": "2022-03-22T14:45:25.848Z",
         "dateUpdated": "2022-03-22T14:45:25.848Z"
+    },
+    {
+        "firstName": "Reese",
+        "lastName": "Luna",
+        "username": "nivydixona",
+        "hash": "$2a$10$j58eGjgYVnf96h3L30C4p.B6gshsdSrDwjelTqD3C2QtAwcEmxrze",
+        "id": 8,
+        "dateCreated": "2022-03-22T16:06:46.086Z",
+        "dateUpdated": "2022-03-22T16:06:46.086Z"
     }
 ]

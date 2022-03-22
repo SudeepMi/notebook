@@ -5,23 +5,21 @@ import {remark} from 'remark'
 import remarkHtml from 'remark-html'
 
 export function getAllAuthors() {
-  const authorsDirectory = path.join(process.cwd(), 'data/_authors')
+  const authorsDirectory = path.join(process.cwd(), 'data/_users')
   const filenames = fs.readdirSync(authorsDirectory)
-
-  return filenames.map(filename => {
-    const file = fs.readFileSync(path.join(process.cwd(), 'data/_authors', filename), 'utf8')
-
-    // get data
-    const data = JSON.parse(file)
-
+  const file = fs.readFileSync(path.join(process.cwd(), 'data/_users', filenames[0]), 'utf8')
+  const data = JSON.parse(file)
+  return data.map(user => {
+    
     // get slug from filename
-    const slug = filename.replace(/\.json/, '')
+    const slug = String(user.firstName+'-'+user.lastName).toLowerCase().replace(/ /g, '-')
 
     // return combined frontmatter and slug; build permalink
     return {
-      ...data,
+      name: user.firstName+' '+user.lastName,
+      id: user.id,
       permalink: `/authors/${slug}`,
-      profilePictureUrl: `/${slug}.jpg`,
+      profilePictureUrl: "https://images.unsplash.com/photo-1542309667-2a115d1f54c6",
       slug,
     }
   })

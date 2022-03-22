@@ -35,9 +35,9 @@ function Login() {
 
     return (
         <Layout>
-            <div className="card">
-                <h4 className="card-header">Login</h4>
-                <div className="card-body">
+            <div className="card login_wrapper border-0">
+                <h4 className="text-center text-brand">Login into NoteBook</h4>
+                <div className="card-body p-4 ">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group">
                             <label>Username</label>
@@ -49,11 +49,11 @@ function Login() {
                             <input name="password" type="password" {...register('password')} className={`form-control ${errors.password ? 'is-invalid' : ''}`} />
                             <div className="invalid-feedback">{errors.password?.message}</div>
                         </div>
-                        <button disabled={formState.isSubmitting} className="btn btn-primary">
+                        <button disabled={formState.isSubmitting} className="btn btn-primary bg-brand border-0 mt-3 w-50">
                             {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1"></span>}
                             Login
                         </button>
-                        <Link href="/account/register" className="btn btn-link">Register</Link>
+                        <a href="/account/register" className="btn btn-link mt-3 mx-5">Create new Account</a>
                     </form>
                 </div>
             </div>
