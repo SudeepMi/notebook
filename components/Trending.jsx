@@ -4,13 +4,18 @@ import { NavLink } from ".";
 import { userService } from "services";
 import Image from "next/image";
 
+
 export { Trending };
 
-function Trending() {
+function Trending({ authors, posts }) {
   const [user, setUser] = useState(null);
+  const author = authors.slice(0, 4);
+  const post = posts.slice(0, 6);
+  console.log(post);
   useEffect(() => {
     const subscription = userService.user.subscribe((x) => setUser(x));
     return () => subscription.unsubscribe();
+
   }, []);
 
   // only show nav when logged in
@@ -120,22 +125,23 @@ function Trending() {
         <hr/>
           <div className="card mt-5">
             <div className="card-body">
-              <h5 className="card-title">Popular Authors</h5>
-              <div className="authors_image_wrapper">
-              <div className="authors_image" style={{backgroundImage:"url(https://images.unsplash.com/photo-1518791841217-8f162f1e1131)"}}>
-              </div>
-              <div className="authors_image" style={{backgroundImage:"url(https://images.unsplash.com/photo-1518791841217-8f162f1e1131)"}}>
-              </div>
-              <div className="authors_image" style={{backgroundImage:"url(https://images.unsplash.com/photo-1518791841217-8f162f1e1131)"}}>
-              </div>
-              <div className="authors_image" style={{backgroundImage:"url(https://images.unsplash.com/photo-1518791841217-8f162f1e1131)"}}>
-              </div>
-              </div>
+              <div className="card-title d-flex justify-content-between align-items-baseline">
+                <h5>
+                  Popular Authors
+                  </h5>
               <a href="/trending/all" className="d-flex align-items-center mt-2">
                 {" "}
                 <span className="mr-1">All Authors </span>
                 <i className="ri-user-4-fill"></i>{" "}
               </a>
+              </div>
+              <div className="authors_image_wrapper">
+                { author.map((author, index) => author.posts.length > 1 && (<a className="d-grid" href={author.permalink}>
+                <div className="authors_image" key={index} style={{backgroundImage:"url(https://images.unsplash.com/photo-1518791841217-8f162f1e1131)"}}>
+                </div>
+                <p className="text-brand">{author.name}</p>
+              </a>))}
+              </div>
               <hr/>
             </div>
           </div>

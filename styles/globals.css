@@ -52,3 +52,24 @@ a{
     min-width: 20vw;
     padding: 10px;
 }
+.toggler{
+    border: 1px solid white !important;
+    border-radius: 35px !important;
+    padding: 0 !important;
+    outline: none !important;
+}
+.toggler:hover{
+    background-color: #b168f4 !important;
+    color: white !important;
+    border: 1px solid black !important;
+}
+.toggler:focus{
+    background-color: #b168f4 !important;
+    color: white !important;
+    border: 1px solid black !important;
+}
+.toggler:active{
+    background-color: #b168f4 !important;
+    color: white !important;
+    border: 1px solid black !important;
+}

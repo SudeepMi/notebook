@@ -48,12 +48,14 @@ export function getAllPosts() {
 }
 
 export function getAuthorBySlug(slug) {
-  const file = fs.readFileSync(path.join(process.cwd(), 'data/_authors', `${slug}.json`), 'utf8')
+  const file = fs.readFileSync(path.join(process.cwd(), 'data/_users', `users.json`), 'utf8')
 
   const data = JSON.parse(file)
-
+  const user = data.find(user => {
+    return String(user.firstName+'-'+user.lastName).toLowerCase().replace(/ /g, '-') === slug
+  })
   return {
-    ...data,
+    name: user.firstName+' '+user.lastName,
     permalink: `/authors/${slug}`,
     profilePictureUrl: `/${slug}.jpg`,
     slug,

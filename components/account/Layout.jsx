@@ -18,8 +18,10 @@ function Layout({ children }) {
     }, []);
 
     return (
+        <div className='app-container'>
         <div className="jumbotron bg-white brand-shadow">
             {children}
+        </div>
         </div>
     );
 }

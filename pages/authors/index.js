@@ -13,7 +13,9 @@ export default function Authors({ authors }) {
         </div>
     </div>
     <div className="d-flex mt-2 justify-content-between flex-wrap">
-      {authors.map(author => (
+      {authors.map(author => {
+        return (
+          author.posts.length > 0 &&
         <div key={author.slug} className="author_page_list">
           <Image alt={author.name} src={author.profilePictureUrl} height="80" width="80" />
           <h5>
@@ -27,7 +29,8 @@ export default function Authors({ authors }) {
             <a>Go to profile →</a>
           </Link>
         </div>
-      ))}
+        )}
+      )}
     </div>
     </div>
   )

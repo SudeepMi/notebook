@@ -2,10 +2,12 @@ import { userService } from 'services';
 import { Link } from 'components';
 import { Trending } from 'components/Trending';
 import Image from 'next/image';
+import { getAllAuthors, getAllPosts } from 'helpers/api/posts'
 
 export default Home;
 
-function Home() {
+function Home({ authors, posts }) {
+
     return (
         <div>
         <div className="p-4 jumbotron d-flex min-h-50 bg-brand">
@@ -21,7 +23,21 @@ function Home() {
                 </div>
             </div>
         </div>
-        <Trending />
+        <Trending authors={authors} posts={posts} />
         </div>
     );
 }
+
+
+export function getStaticProps() {
+    return {
+      props: {
+        authors: getAllAuthors().map(author => ({
+          ...author,
+          posts: getAllPosts().filter(post => post.author === author.slug),
+        })),
+        posts: getAllPosts(),
+      }
+    }
+  }
+  

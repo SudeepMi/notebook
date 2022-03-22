@@ -70,5 +70,14 @@
         "id": 8,
         "dateCreated": "2022-03-22T16:06:46.086Z",
         "dateUpdated": "2022-03-22T16:06:46.086Z"
+    },
+    {
+        "firstName": "Alexander",
+        "lastName": "Branch",
+        "username": "pesiluna",
+        "hash": "$2a$10$s4ijoF7OIzLe64ihU7vNbOCt8.mwcp..DheRfO2XU10AP2H0Gxz9u",
+        "id": 9,
+        "dateCreated": "2022-03-22T17:13:56.095Z",
+        "dateUpdated": "2022-03-22T17:13:56.095Z"
     }
 ]
