@@ -34,5 +34,14 @@
         "id": 4,
         "dateCreated": "2022-03-22T06:48:29.398Z",
         "dateUpdated": "2022-03-22T06:48:29.399Z"
+    },
+    {
+        "firstName": "Yvonne",
+        "lastName": "Hubbard",
+        "username": "zunuba",
+        "hash": "$2a$10$9bHkQZf.AXNQUQYZdfQ4DOLPVURNzPD6bIr1vMl0VzJsrs/q6uJ.C",
+        "id": 5,
+        "dateCreated": "2022-03-22T14:07:41.970Z",
+        "dateUpdated": "2022-03-22T14:07:41.970Z"
     }
 ]

@@ -9,7 +9,6 @@ const cors = Cors({
 
 
 export function apiHandler(handler) {
-    console.log("sss");
     return async (req, res) => {
         const method = req.method.toLowerCase();
         // check handler supports HTTP method
