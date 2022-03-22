@@ -43,5 +43,14 @@
         "id": 5,
         "dateCreated": "2022-03-22T14:07:41.970Z",
         "dateUpdated": "2022-03-22T14:07:41.970Z"
+    },
+    {
+        "firstName": "Colleen",
+        "lastName": "Roberts",
+        "username": "diduxe",
+        "hash": "$2a$10$AxYZ.k6w0UiGok5ySb2Mi.xAcPSuL17d6P/F2vXKPNc2PB8COlurC",
+        "id": 6,
+        "dateCreated": "2022-03-22T14:32:39.195Z",
+        "dateUpdated": "2022-03-22T14:32:39.195Z"
     }
 ]
