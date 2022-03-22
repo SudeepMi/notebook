@@ -48,5 +48,5 @@ function _delete(id) {
 
 function saveData() {
     const path = process.env.NODE_ENV=="production" ? '.next/data/users.json' : 'data/users.json';
-    fs.writeFileSync('data/users.json', JSON.stringify(users, null, 4));
+    fs.writeFileSync(path, JSON.stringify(users, null, 4));
 }
