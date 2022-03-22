@@ -52,5 +52,14 @@
         "id": 6,
         "dateCreated": "2022-03-22T14:32:39.195Z",
         "dateUpdated": "2022-03-22T14:32:39.195Z"
+    },
+    {
+        "firstName": "Hector",
+        "lastName": "Snow",
+        "username": "mucahetetu",
+        "hash": "$2a$10$998isdOFHgp1R6dJx7xb1O1OJCoZbwigsydHV6OJsklEjMPWLy9KC",
+        "id": 7,
+        "dateCreated": "2022-03-22T14:45:25.848Z",
+        "dateUpdated": "2022-03-22T14:45:25.848Z"
     }
 ]
