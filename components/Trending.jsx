@@ -21,7 +21,7 @@ function Trending() {
       <div className="row">
         <div className="col-md-12 d-flex justify-content-between align-items-center">
           <h3> <i className="ri-line-chart-line"></i> Trending</h3>
-          <a href="/trending/all" className="d-flex align-items-center"> ALL <i class="ri-bar-chart-horizontal-line"></i> </a>
+          <a href="/trending/all" className="d-flex align-items-center"> ALL <i className="ri-bar-chart-horizontal-line"></i> </a>
         </div>
       </div>
       <div className="row">

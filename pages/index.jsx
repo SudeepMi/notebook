@@ -1,6 +1,7 @@
 import { userService } from 'services';
 import { Link } from 'components';
 import { Trending } from 'components/Trending';
+import Image from 'next/image';
 
 export default Home;
 
@@ -15,7 +16,7 @@ function Home() {
                         <button className='btn btn-large bg-dark btn-block text-white mt-5'>START READING</button>
                         </div>
                         <div className='right'>
-                            <img src='/landing.png' alt='curious' width={400} />
+                            <Image src='/landing.png' alt='curious' width={400} height="300" />
                         </div>
                 </div>
             </div>
