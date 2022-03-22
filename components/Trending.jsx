@@ -24,6 +24,86 @@ function Trending() {
           <a href="/trending/all" className="d-flex align-items-center"> ALL <i class="ri-bar-chart-horizontal-line"></i> </a>
         </div>
       </div>
+      <div className="row">
+        <div className="col-md-12 my-5">
+          <div className="row">
+            <div className="col-md-6 p-2">
+                         <NavLink href="/trending/week">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">Blog Title</h5>
+                    <p className="card-text">
+                      <i className="ri-bar-chart-line"></i>
+                    </p>
+                    </div>
+                    </div>
+                    </NavLink>
+                    </div>
+                    <div className="col-md-6 p-2">
+              <NavLink href="/trending/week">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">Blog Title</h5>
+                    <p className="card-text">
+                      <i className="ri-bar-chart-line"></i>
+                    </p>
+                    </div>
+                    </div>
+                    </NavLink>
+                    </div>
+                    <div className="col-md-6 p-2">
+              <NavLink href="/trending/week">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">Blog Title</h5>
+                    <p className="card-text">
+                      <i className="ri-bar-chart-line"></i>
+                    </p>
+                    </div>
+                    </div>
+                    </NavLink>
+                    </div>
+                    <div className="col-md-6 p-2">
+              <NavLink href="/trending/week">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">Blog Title</h5>
+                    <p className="card-text">
+                      <i className="ri-bar-chart-line"></i>
+                    </p>
+                    </div>
+                    </div>
+                    </NavLink>
+                    </div>
+                    <div className="col-md-6 p-2">
+              <NavLink href="/trending/week">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">Blog Title</h5>
+                    <p className="card-text">
+                      <i className="ri-bar-chart-line"></i>
+                    </p>
+                    </div>
+                    </div>
+                    </NavLink>
+                    </div>
+                    <div className="col-md-6 p-2">
+              <NavLink href="/trending/week">
+                <div className="card">
+                  <div className="card-body">
+                    <h5 className="card-title">Week</h5>
+                    <p className="card-text">
+                      <i className="ri-bar-chart-line"></i>
+                    </p>
+                    </div>
+                    </div>
+                    </NavLink>
+                    </div>
+                    
+                    </div>
+                    </div>
+                    </div>
+
     </div>
   );
 }
