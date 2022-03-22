@@ -5,9 +5,13 @@ import { getAllAuthors, getAllPosts } from '../../helpers/api/posts'
 
 export default function Authors({ authors }) {
   return (
-    <div className="authors">
-      <h1>Authors</h1>
-
+    <div className='container mt-4'>
+    <div className='row'>
+      <div className='col-md-12'>
+        <h3>Authors</h3>
+        </div>
+    </div>
+    <div className="d-flex mt-2 justify-content-between">
       {authors.map(author => (
         <div key={author.slug}>
           <h2>
@@ -25,6 +29,7 @@ export default function Authors({ authors }) {
           </Link>
         </div>
       ))}
+    </div>
     </div>
   )
 }

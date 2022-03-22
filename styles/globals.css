@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
 a { cursor: pointer; }
 
-.app-container {
-    min-height: 350px;
+a{
+    color: #aa79db;
+}
+
+.min-h-50{
+    max-height: 60vh;
+}
+.bg-brand{
+    background-color: #b168f4;
+}
+.landing_welcome_text{
+    font-size: 70px;
+    font-family: 'PT Serif', serif, sans-serif, 'Open Sans', sans-serif;
 }

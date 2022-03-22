@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-
+import "remixicon/fonts/remixicon.css";
 import 'styles/globals.css';
 
 import { userService } from 'services';

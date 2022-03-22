@@ -25,5 +25,14 @@
         "id": 3,
         "dateCreated": "2022-03-21T12:43:29.873Z",
         "dateUpdated": "2022-03-21T12:43:29.874Z"
+    },
+    {
+        "firstName": "Aurora",
+        "lastName": "Meyer",
+        "username": "vemotelahi",
+        "hash": "$2a$10$ZDim8ePk.jGwuuafVmyt3OnbixmCS2IZCbtCGJC4kikiiEViEgpKO",
+        "id": 4,
+        "dateCreated": "2022-03-22T06:48:29.398Z",
+        "dateUpdated": "2022-03-22T06:48:29.399Z"
     }
 ]
