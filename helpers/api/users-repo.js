@@ -43,12 +43,11 @@ function _delete(id) {
     // filter out deleted user and save
     users = users.filter(x => x.id.toString() !== id.toString());
     saveData();
-    
 }
 
 // private helper functions
 
 function saveData() {
-    const fileDestination = path.join(process.cwd(), 'data/_users/users.json');
+    const fileDestination = path.join(process.cwd(), 'data/_users','users.json');
     fs.writeFileSync(fileDestination, JSON.stringify(users, null, 4));
 }

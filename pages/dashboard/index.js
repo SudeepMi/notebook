@@ -1,5 +1,7 @@
+import { getAllPosts } from 'helpers/api'
 import Image from 'next/image'
 import Link from 'next/link'
+import { userService } from 'services'
 
 
 
@@ -65,4 +67,16 @@ export default function Dashboard({ authors }) {
         </div>
     )
 }
+
+
+export function getStaticProps() {
+    return {
+      props: {
+        post: getAllPosts().map(post => (
+            post.author === userService.user.username
+        )),
+      }
+    }
+  }
+  
 
