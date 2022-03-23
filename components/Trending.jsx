@@ -11,7 +11,7 @@ function Trending({ authors, posts }) {
   const [user, setUser] = useState(null);
   const author = authors.slice(0, 4);
   const post = posts.slice(0, 6);
-  console.log(post);
+  
   useEffect(() => {
     const subscription = userService.user.subscribe((x) => setUser(x));
     return () => subscription.unsubscribe();
@@ -39,78 +39,21 @@ function Trending({ authors, posts }) {
         <div className="row">
           <div className="col-md-12 my-5">
             <div className="row">
-              <div className="col-md-6 p-2">
-                <NavLink href="/trending/week">
+              {post.map((post,index) => (
+              <div className="col-md-6 p-2" key={index}>
+                <NavLink href={post.permalink}>
                   <div className="card">
                     <div className="card-body">
-                      <h5 className="card-title">Blog Title</h5>
+                      <h5 className="card-title">{post.title}</h5>
                       <p className="card-text">
-                        <i className="ri-bar-chart-line"></i>
+                        <i className="ri-bar-chart-line"></i>{" "}
+                        { parseInt(Math.random() * (100 - 1) + 1) }
                       </p>
                     </div>
                   </div>
                 </NavLink>
               </div>
-              <div className="col-md-6 p-2">
-                <NavLink href="/trending/week">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Blog Title</h5>
-                      <p className="card-text">
-                        <i className="ri-bar-chart-line"></i>
-                      </p>
-                    </div>
-                  </div>
-                </NavLink>
-              </div>
-              <div className="col-md-6 p-2">
-                <NavLink href="/trending/week">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Blog Title</h5>
-                      <p className="card-text">
-                        <i className="ri-bar-chart-line"></i>
-                      </p>
-                    </div>
-                  </div>
-                </NavLink>
-              </div>
-              <div className="col-md-6 p-2">
-                <NavLink href="/trending/week">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Blog Title</h5>
-                      <p className="card-text">
-                        <i className="ri-bar-chart-line"></i>
-                      </p>
-                    </div>
-                  </div>
-                </NavLink>
-              </div>
-              <div className="col-md-6 p-2">
-                <NavLink href="/trending/week">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Blog Title</h5>
-                      <p className="card-text">
-                        <i className="ri-bar-chart-line"></i>
-                      </p>
-                    </div>
-                  </div>
-                </NavLink>
-              </div>
-              <div className="col-md-6 p-2">
-                <NavLink href="/trending/week">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Week</h5>
-                      <p className="card-text">
-                        <i className="ri-bar-chart-line"></i>
-                      </p>
-                    </div>
-                  </div>
-                </NavLink>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -136,7 +79,7 @@ function Trending({ authors, posts }) {
               </a>
               </div>
               <div className="authors_image_wrapper">
-                { author.map((author, index) => author.posts.length > 1 && (<a className="d-grid" href={author.permalink}>
+                { author.map((author, index) => author.posts.length > 1 && (<a className="d-grid" href={author.permalink} key={author.id}>
                 <div className="authors_image" key={index} style={{backgroundImage:"url(https://images.unsplash.com/photo-1518791841217-8f162f1e1131)"}}>
                 </div>
                 <p className="text-brand">{author.name}</p>

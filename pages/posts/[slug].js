@@ -11,19 +11,18 @@ export default function Post({ post }) {
   })
 
   return (
-    <div className="post">
+    <div className="container mt-5 post">
       <h1>{post.title}</h1>
-
       <div>
         <Image alt={post.author.name} src={post.author.profilePictureUrl} height="40" width="40" />
 
-        <div>
+        <div className='my-4'>
           <strong>
             <Link href={post.author.permalink}>
               <a>{post.author.name}</a>
             </Link>
           </strong>
-
+          <br/>
           <time dateTime={post.createdAt}>{prettyDate}</time>
         </div>
       </div>

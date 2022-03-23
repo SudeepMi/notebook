@@ -53,7 +53,7 @@ function Login() {
                             {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1"></span>}
                             Login
                         </button>
-                        <a href="/account/register" className="btn btn-link mt-3 mx-5">Create new Account</a>
+                        <Link href="/account/register" className="btn btn-link mt-3 mx-5">Create new Account</Link>
                     </form>
                 </div>
             </div>

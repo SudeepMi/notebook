@@ -5,7 +5,7 @@ import { getAllPosts, getAuthorBySlug } from '../../helpers/api/posts'
 
 export default function Posts({ posts }) {
   return (
-    <div className="posts">
+    <div className="container posts">
       <h1>Posts</h1>
 
       {posts.map(post => {

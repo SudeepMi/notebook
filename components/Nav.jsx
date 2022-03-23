@@ -72,9 +72,8 @@ function Nav() {
               "aria-labelledby": "basic-button",
             }}
           >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>My account</MenuItem>
-            <MenuItem onClick={logout}>Logout</MenuItem>
+            <NavLink className="p-4" href="/dashboard" >My notebook</NavLink>
+            <MenuItem className="p-4" onClick={logout}>Logout</MenuItem>
           </Menu>
         </div>
         </div>

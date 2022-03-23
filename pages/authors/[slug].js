@@ -5,7 +5,7 @@ import { getAllAuthors, getAllPosts, getAuthorBySlug } from '../../helpers/api/p
 
 export default function Author({ author }) {
   return (
-    <div className="author">
+    <div className="container author">
       <h1>{author.name}</h1>
 
       <Image alt={author.name} src={author.profilePictureUrl} height="120" width="120" />
