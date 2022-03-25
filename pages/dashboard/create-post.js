@@ -46,7 +46,7 @@ const QuillNoSSRWrapper = dynamic(import('react-quill'), {
   ]
 
 
-function createPost() {
+function CreatePost() {
   const [title, setTitle] = React.useState('')
   const [body, setBody] = React.useState('')
   const [isLoading, setIsLoading] = React.useState(false)
@@ -105,4 +105,4 @@ function createPost() {
   )
 }
 
-export default createPost
+export default CreatePost
