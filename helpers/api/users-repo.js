@@ -1,6 +1,5 @@
 import path from 'path';
-
-const fs = require('fs');
+import fs from 'fs'
 
 // users in JSON file for simplicity, store in a db for production applications
 let users = require('data/_users/users.json');

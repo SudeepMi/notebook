@@ -15,7 +15,6 @@ export default function Post({ post }) {
       <h1>{post.title}</h1>
       <div>
         <Image alt={post.author.name} src={post.author.profilePictureUrl} height="40" width="40" />
-
         <div className='my-4'>
           <strong>
             <Link href={post.author.permalink}>
@@ -26,7 +25,11 @@ export default function Post({ post }) {
           <time dateTime={post.createdAt}>{prettyDate}</time>
         </div>
       </div>
-
+        <div className="row">
+          <div className="col-md-9 m-auto post-content-banner">
+            <Image src={post.imgUrl} alt={post.title} layout='fill' className='img-responsive'  />
+          </div>
+        </div>
       <div dangerouslySetInnerHTML={{ __html: post.body }} />
     </div>
   )
@@ -35,7 +38,7 @@ export default function Post({ post }) {
 export function getStaticProps({ params }) {
   const post = getPostBySlug(params.slug)
   const author = getAuthorBySlug(post.author)
-
+ 
   return {
     props: {
       post: {

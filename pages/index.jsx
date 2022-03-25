@@ -18,7 +18,7 @@ function Home({ authors, posts }) {
                         <button className='btn btn-large bg-dark btn-block text-white mt-5'>START READING</button>
                         </div>
                         <div className='right'>
-                            <Image src='/landing.png' alt='curious' width={400} height="300" />
+                            <Image src='/landing.png' alt='curious' width={400} height="300" placeholder='blur' blurDataURL='/small.png' priority />
                         </div>
                 </div>
             </div>

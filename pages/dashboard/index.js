@@ -72,9 +72,9 @@ export default function Dashboard({ authors }) {
 export function getStaticProps() {
     return {
       props: {
-        post: getAllPosts().map(post => (
-            post.author === userService.user.username
-        )),
+        // post: getAllPosts().map(post => (
+        //     post.author === userService.user.username
+        // )),
       }
     }
   }

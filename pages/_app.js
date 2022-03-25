@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import "remixicon/fonts/remixicon.css";
 import 'styles/globals.css';
+import 'react-quill/dist/quill.snow.css'
+
 
 import { userService } from 'services';
 import { Nav, Alert } from 'components';

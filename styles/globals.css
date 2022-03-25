@@ -73,3 +73,7 @@ a{
     color: white !important;
     border: 1px solid black !important;
 }
+.post-content-banner{
+    height: 50vh;
+    width: 100%;
+}
