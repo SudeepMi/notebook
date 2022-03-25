@@ -79,5 +79,14 @@
         "id": 9,
         "dateCreated": "2022-03-22T17:13:56.095Z",
         "dateUpdated": "2022-03-22T17:13:56.095Z"
+    },
+    {
+        "firstName": "Ralph",
+        "lastName": "Callahan",
+        "username": "wexuqax",
+        "hash": "$2a$10$DyvvO3hH0OKnk6N96W.53uPgXIfQ8BHu5GCmUvRqv4opBMcZSlNhi",
+        "id": 10,
+        "dateCreated": "2022-03-25T18:16:17.204Z",
+        "dateUpdated": "2022-03-25T18:16:17.204Z"
     }
 ]
